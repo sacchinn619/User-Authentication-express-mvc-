@@ -27,7 +27,7 @@ usersController.login = (req, res) => {
                             const tokenData = {
                                 id: user._id
                             }
-                            const token = jwt.sign(tokenData, 'dct@123', { expiresIn: '2d'})
+                            const token = jwt.sign(tokenData, 'raj@123', { expiresIn: '2d'})
                             res.json({
                                 token: token
                             })
