@@ -6,7 +6,7 @@ const authenticateUser=(req,res,next)=>{
         let tokenData
     
     try{
-        tokenData=jwt.verify(token,'dct@123')
+        tokenData=jwt.verify(token,'raj@123')
         req.userId=tokenData.id
         next()
     }
